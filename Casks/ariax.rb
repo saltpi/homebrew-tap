@@ -1,6 +1,6 @@
 cask "ariax" do
-  version "1.0.3"
-  sha256 "9b08b7bee08446307fb358367fa7dd20a08a7a0a38aafbf48419213c9eb8e9d0"
+  version "1.0.4"
+  sha256 "37b41563903457d2ae4d6da0f132ec4cb2fc76966be7147c88f03db6834772ce"
 
   url "https://github.com/saltpi/Aria.X/releases/download/#{version}/AriaX.zip"
   name "AriaX"
