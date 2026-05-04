@@ -1,11 +1,16 @@
 cask "ariax" do
-  version "1.0.5"
-  sha256 "7031d51d71e6f617a8ef1a5b29b8a247e0ad582f404349a90d1437e001885b88"
+  version "1.0.7"
+  sha256 "6cd6d7af6fae1c8bf8493f7976b52ec2d9031c09d6f2d6b1fc911167f9feef24"
 
-  url "https://github.com/saltpi/Aria.X/releases/download/#{version}/AriaX.zip"
+  url "https://github.com/saltpi/Aria.X/releases/download/#{version}/AriaX.dmg"
   name "AriaX"
   desc "Aria2 download manager for macOS"
-  homepage "https://github.com/saltpi/Aria.X"
+  homepage "https://ariax.saltpi.cn"
+
+  livecheck do
+    url "https://github.com/saltpi/Aria.X/releases/latest/download/appcast.xml"
+    strategy :sparkle
+  end
 
   auto_updates true
   depends_on macos: ">= :sonoma"
